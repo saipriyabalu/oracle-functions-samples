@@ -25,6 +25,7 @@ def handler(ctx, data: io.BytesIO=None):
         smtp_password = cfg["smtp-password"]
         smtp_host = cfg["smtp-host"]
         smtp_port = cfg["smtp-port"]
+        print('Sample Log Please Log')
     except Exception as ex:
         print('ERROR: Missing configuration key', ex, flush=True)
         raise
